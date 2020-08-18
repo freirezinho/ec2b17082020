@@ -1,0 +1,25 @@
+==================
+TESTE
+==================
+
+Back-end
+Utilizaremos bibliotecas como jest para testes unitários e mocha para testes de integração.
+
+Testaremos os serviços de autenticação, notificação, armazenamento no banco de dados, solicitação e aceite de viagens,
+registro de localização e destino.
+
+Android / iOS / Web
+
+Faremos testes unitários, integração e end-to-end utilizando de:
+
+Jest (testes unitários)
+React Native Testing Library (testes de integração)
+Cavy (Android / iOS, end-to-end ) e Cypress (web, end-to-end)
+
+Os testes unitários devem ser aplicados em cada função escrita.
+
+Os testes de integração serão utilizados para testar os serviços relacionados à autenticação, notificação,
+solicitação e aceite de viagens, visualização de destinos até de 10 dólares e armazenamento de destinos favoritos.
+
+Os testes end to end farão o teste automático da interface, replicando toda a jornada descrita no mapa da aplicação
+presente em design.txt.

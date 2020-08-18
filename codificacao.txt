@@ -1,0 +1,23 @@
+==================
+CODIFICAÇÃO
+==================
+
+Back-End
+
+Utilizaremos TypeScript, para construir o servidor com NodeJS.
+Utilizaremos de bibliotecas como express, socket.io, sequelize, para atender os requisitos do sistema.
+O banco relacional escolhido será PostgreSQL.
+O banco não relacional para atualizações em tempo real das viagens será o MongoDB.
+
+App e Web App
+
+Para construir tanto o app de usuário (web / android e ios), quanto o de motorista, empregaremos o uso de TypeScript,
+com o framework React Native. Com React Native podemos entregar o software para Web, Android e iOS compartilhando 90% da base de código.
+
+Para acelerar o desenvolvimento da interface de usuário na Web e no Android, utilizaremos a biblioteca visual React-Native-Paper
+para replicar facilmente o look and feel do Material Design.
+
+No iOS, buscaremos utilizar os componentes padrão da plataforma tanto quanto possível, assim como os ícones da fonte FS Symbol, nativa da plataforma,
+para economizar no tamanho da aplicação ou necessidade de carregar ícones e fontes externos.
+
+Para o algoritmo de ML utilizaremos TensorflowJS, para embarcá-lo na aplicação feita em React Native.

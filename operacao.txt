@@ -1,0 +1,21 @@
+==================
+OPERAÇÃO
+==================
+
+
+Criaremos uma pipeline de integração e entrega contínua com Gitlab ou Github Actions,
+se este projeto for obrigatório o uso do github. 
+
+A pipeline deve validar em cada commit o andamento dos testes.
+A pipeline deve separar os branches do projeto em dev, onde as novas features do projeto devem ser injetadas por meio de feature-branches, e master,
+onde somente os releases devem vir, após serem testados e aprovados em dev.
+A pipeline deve realizar o deploy na AWS em máquinas EC2, com PM2 para gerenciar os processos feitos em nodeJS.
+Ainda na AWS, podemos integrar uma combinação de Zabbix + Grafana para visualizar o estado da aplicação web e backend.
+
+Mobile
+A pipeline para mobile deve utilizar fastlane, integrada ao Git, no iOS para gerenciamento de certificados.
+A pipeline para mobile deve utilizar bitrise, integrado ao Git, para Android.
+
+Com estes serviços, esperamos ter gerenciamento de certificados(iOS), keystores(android) e builds de debug e release automatizados em
+um projeto de branches semelhante ao utilizado nas aplicações e serviços web. Após a build ser aprovada no branch de dev, deve ser enviada para teste interno (Android) e Testflight (iOS),
+antes da build ser enviada para a master e uma tag de release ser criada para ela.

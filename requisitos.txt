@@ -1,0 +1,39 @@
+Empresa X – Carros Voadores de transporte com preço até 10 dólares
+
+==================
+REQUISITOS
+==================
+
+Software que rode na Web, Android e iOS para que as pessoas possam pedir viagens com carros voadores com preço de até 10 dólares.
+
+BACK-END
+- API com SLA 99,99% de disponibilidade
+- Banco de dados relacional para guardar as transações e informações de usuário
+- Banco de dados não relacional para guardar informações alteradas em tempo real das viagens
+- Serviço de autenticação
+- Serviço integrado a gateway de pagamento
+- Serviço de notificação de motoristas
+- Serviço de solicitação (usuário) e aceite (motoristas) de viagens
+- Conexão com API de mapas para registrar localização do usuário e destino
+
+FRONT-END / UI
+
+[Usuário]
+
+Web / Android & iOS:
+- Não deve consumir muitos dados
+- Precisa exibir mapa estilo google maps para facilitar escolha de localização e destino
+- Limitar os destinos cujos valores passem de 10 dólares baseado na geolocalização do usuário
+
+Web somente:
+- Deve ser responsivo, capaz de acessar via Desktop ou Mobile.
+
+Android / iOS somente:
+- Ter um algoritmo com ML para analisar dados em timeseries e perceber quais os destinos favoritos do usuário
+- Usar a informação processada pelo algoritmo para notificar o usuário quando ele está próximo de um destino favorito e que consegue uma viagem por menos de 10 dólares
+
+[Motoristas]
+Android / iOS somente:
+- Não deve consumir muitos dados
+- Precisa exibir mapa estilo google maps para facilitar a visualização de trajeto do usuário
+- Deve notificar o motorista quando há viagens perto

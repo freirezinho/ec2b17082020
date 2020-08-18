@@ -1,0 +1,75 @@
+==================
+DESIGN
+==================
+
+Para construir a interface de usuário da aplicação nas três plataformas contaremos
+com os guias de estilo do Google sobre Material Design (Android / Web) e Human Interface Guidelines da Apple (iOS).
+
+Criaremos:
+
+[Usuário]
+
+- Splash Screen (Android e iOS)
+Deve conter: logo e nome do App
+
+- Login
+Deve conter: formulário com email, senha, botão de login, link de registro e esqueci minha senha.
+
+- Registro
+Deve conter: formulário com nome, e-mail, senha e botão de registro.
+
+- Esqueci minha senha
+Deve conter: campo para informar o e-mail do usuário para receber um link de reset de senha
+
+- Home
+Deve conter: mapa estilo google maps, campo de busca de endereço, modal para demonstrar o valor da viagem,
+botão de confirmação da viagem e botão de cancelamento do pedido.
+
+- Tela de Pagamento
+Deve conter: método de pagamento escolhido, opção de cadastrar método de pagamento, lista de métodos cadastrados
+e botão de seleção de método de pagamento.
+
+- Tela de acompanhamento da viagem
+Deve conter: mapa da viagem com atualização em tempo real, informações do carro, opção de compartilhamento da viagem.
+
+- Tela de feedback
+Deve conter: modelo do carro utilizado, com placa, motorista responsável pela viagem,
+símbolos de like e deslike para avaliação e caixa de comentários.
+
+Mapa da aplicação:
+
+SplashScreen (Android / iOS) => Login / Registro / Esqueci Minha Senha => Home => Pagamento => Acompanhamento de Viagem => Feedback
+
+[Motorista]
+
+- Splash Screen (Android e iOS)
+Deve conter: logo e nome do App
+
+- Login
+Deve conter: formulário com email, senha, botão de login, link de registro e esqueci minha senha.
+
+- Registro
+Deve conter: formulário com nome, e-mail, senha, CPF, campo para envio de habilitação de carro voador e botão de registro.
+
+- Esqueci minha senha
+Deve conter: campo para informar o e-mail do usuário para receber um link de reset de senha
+
+- Home
+Deve conter: mapa estilo google maps, modal para demonstrar solicitação de viagem com prévia de preço e opção de aceite o cancelamento
+
+- Tela de Pagamento
+Deve conter: método de recebimento escolhido (qual conta bancária), interface para editar informações bancárias ou adicionar, caso não tenha ainda.
+
+- Tela de acompanhamento da viagem
+Deve conter: mapa da viagem com atualização em tempo real, informações do viajante, opção de compartilhamento da viagem.
+
+- Tela de feedback
+Deve conter: nome do viajante, símbolos de like e deslike para avaliação e caixa de comentários.
+
+Mapa da aplicação:
+
+SplashScreen (Android / iOS) => Login / Registro / Esqueci Minha Senha => Pagamento (primeiro uso) => Home => Acompanhamento de Viagem => Feedback
+
+
+Utilizaremos Storybook para guardar e padronizar o design de todos esses componentes em uma biblioteca que seja fácil de
+replicar no design entre as plataformas.
